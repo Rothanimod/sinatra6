@@ -1,0 +1,8 @@
+<% unless @sum %>
+  <% @sum=0 %>
+<%end%>
+<h1>Mi cuenta es: <%=@sum %> </h1>
+<form method= "post" action= "/">
+  <input type="text" name="sum" value=<%= @sum %>>
+  <input type="submit" value="Suma!!">
+</form>
